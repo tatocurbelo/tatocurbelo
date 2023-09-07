@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Contador</title>
+        <script>
+        let contador = 0;
+        let edad = ""
+            function sumar() {
+                contador++;
+                if (contador ==8) { edad = "Casi la edad de Mile";
+            }
+                
+                if (contador ==16) { edad = "La edad de Seba";
+            }
+            if (contador ==34) { edad = "La edad de Papá";
+            }
+            if (contador ==40) { edad = "Ojo estas llegando a la edad de Mamá ";
+            }  
+            if (contador ==45) { edad = "Ya falta menos para llegar a la edad de Mamá, segui apretando negrita";
+            }
+            if (contador ==57) { edad = "La edad de Mamá";
+            }
+            
+                document.querySelector('h1').innerHTML = contador;
+                document.querySelector('h2').innerHTML = edad;
+                
+        }
+            function restar(){
+                contador--;
+                document.querySelector('h1').innerHTML = contador;
+            }
+
+
+        </script>
+
+    </head>
+
+
+    <body>
+        <div style=" position:absolute; top: 300px; left: 200px;">   
+             <h2> </h2>
+        </div>
+       
+        <h1>0</h1>
+        <button onclick="sumar()"> suma 1</button>
+        <button onclick="restar()"> resta 1</button>
+
+    </body>
+</html>
